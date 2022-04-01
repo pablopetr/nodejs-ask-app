@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-ask-app",
+  "version": "1.0.0",
+  "description": "Ask and Answer plataform like Yahoo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Eliézer",
+  "license": "ISC"
+}
