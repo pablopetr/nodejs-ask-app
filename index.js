@@ -4,22 +4,12 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.get("/:name/:lang", (req, res) => {
-    var name = req.params.name;
-    var lang = req.params.lang;
+app.get("/", (req, res) => {
+    res.render("index");
+});
 
-    var products = [
-        {name: 'iPhone', price: 399},
-        {name: 'Coke', price: 1.99},
-        {name: 'Milk', price: 2.99},
-    ];
-
-    res.render("index", {
-        name: name,
-        lang: lang,
-        showHello: true,
-        products,
-    });
+app.get("/ask", (req, res) => {
+    res.render("ask");
 });
 
 app.listen(8080, () => {
